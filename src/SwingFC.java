@@ -80,7 +80,7 @@ public class SwingFC implements ActionListener {
         i = f1.read();
         j = f2.read();
         if (i != j) break;
-      } while (i == -1 || j == -1);
+      } while (i != -1 & j != -1);
 
       if (i != j) jlabResult.setText("Files are not the same.");
       else jlabResult.setText("Files compare equal.");
